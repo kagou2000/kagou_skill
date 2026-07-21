@@ -20,6 +20,20 @@
 
 通过剪映自动字幕或备用语音识别流程，将视频、音频转换为剪映或 CapCut 可导入的 UTF-8 SRT 字幕。
 
+## Draft 功能的开源依赖
+
+`jianying-draft-project` 的剪映草稿生成能力依赖开源项目
+[GuanYixuan/pyJianYingDraft](https://github.com/GuanYixuan/pyJianYingDraft)。它提供了通过 Python 创建剪映草稿、轨道、素材片段和字幕等内容的基础能力。
+
+本仓库当前固定使用 `pyjianyingdraft==0.2.6`，并在它的基础上提供：
+
+- 面向 Agent 的 `SKILL.md` 工作流程和安全约束
+- EDL JSON 的解析与生成前校验
+- 视频片段、时间线和 SRT 字幕的统一构建入口
+- 技能目录内独立运行环境的安装及检查脚本
+
+`pyJianYingDraft` 的版权及许可证归其原作者和贡献者所有；使用或分发时请同时遵守该上游项目的许可证。
+
 ## 目录结构
 
 ```text
